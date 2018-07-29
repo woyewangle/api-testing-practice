@@ -63,11 +63,13 @@ if (project.plugins.findPlugin('jacoco')) {
 test {
     useJUnitPlatform {
         excludeTags 'demo'
+
     }
 
     testLogging {
         events 'passed', 'skipped', 'failed'
     }
+
 
     if (project.plugins.findPlugin('jacoco')) {
         finalizedBy jacocoTestReport
