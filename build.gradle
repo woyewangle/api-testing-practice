@@ -61,6 +61,11 @@ if (project.plugins.findPlugin('jacoco')) {
 }
 
 test {
+
+    filter {
+        includeTestsMatching '*Test'
+    }
+
     useJUnitPlatform {
         excludeTags 'demo'
 
