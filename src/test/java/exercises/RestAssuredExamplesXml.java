@@ -3,12 +3,13 @@ package exercises;
 
 
 import jdk.nashorn.internal.ir.annotations.Ignore;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 
-@Ignore
+@Tag("demo")
 public class RestAssuredExamplesXml {
 
     @Test
