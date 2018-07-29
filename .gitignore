@@ -9,6 +9,6 @@ out
 .settings/
 .vscode/
 bin/
-parking-lot-service.iml
-parking-lot-service.ipr
-parking-lot-service.iws
+*.ipr
+*.iws
+*.iml

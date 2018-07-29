@@ -1,10 +1,10 @@
-REST Assured workshop
+REST API TESTING PRACTICE
 ==================
-For those of you looking to gain some experience working with [REST Assured](http://rest-assured.io/), here are all the materials from a workshop I've created and delivered multiple times to good reviews. Feel free to use, share and adapt these materials as you see fit.
+For those of you looking to gain some experience working with [REST Assured](http://rest-assured.io/).
 
 What do I need?
 ---
-A Java 8 JDK and Maven. That's it.
+A Java 8 JDK and Gradle. That's it.
 
 What API is used for the exercises?
 ---
@@ -16,5 +16,8 @@ In order to get a response from the WireMock mock server, you'll need to start i
 ```
 java -jar wiremock-standalone-2.15.0.jar --port 9876
 ```
-In the (unlikely) event that you've already got a process running on port 9876, you can run the mock server on any available port. Please make sure to change the references to the port in the `@BeforeClass` methods as well, or your tests will likely never pass...
 
+In our execrcises, you have complete the test practice due to the comments in test files.
+
+**Tips**
+You can search the url which should be tested by IDE global search, it will be found in files of Resource folder.
