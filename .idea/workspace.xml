@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e96d74ed-42d6-4aed-a49c-ca9795980cdb" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/exercises/RestAssuredExercises2Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/exercises/RestAssuredExercises2Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/exercises/RestAssuredExercises3Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/exercises/RestAssuredExercises3Test.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -53,8 +51,8 @@
       <file leaf-file-name="RestAssuredExercises3Test.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/exercises/RestAssuredExercises3Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-849">
-              <caret line="69" column="4" selection-start-line="69" selection-start-column="4" selection-end-line="69" selection-end-column="4" />
+            <state relative-caret-position="141">
+              <caret line="88" column="7" lean-forward="true" selection-start-line="88" selection-start-column="7" selection-end-line="88" selection-end-column="87" />
             </state>
           </provider>
         </entry>
@@ -109,9 +107,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="624" />
-    <option name="y" value="74" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="440" />
+    <option name="y" value="100" />
     <option name="width" value="1214" />
     <option name="height" value="1020" />
   </component>
@@ -374,24 +372,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RestAssuredExercises2Test_checkNumberOfPitstopsForMaxVerstappenIn2015 - 2018.07.30 at 15h 03m 53s.xml">
-      <configuration name="RestAssuredExercises2Test.checkNumberOfPitstopsForMaxVerstappenIn2015" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RestAssuredExercises2Test_checkNumberOfPitstopsForMaxVerstappenIn2015 - 2018.07.30 at 15h 04m 18s.xml">
-      <configuration name="RestAssuredExercises2Test.checkNumberOfPitstopsForMaxVerstappenIn2015" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RestAssuredExercises2Test_checkNumberOfPitstopsForMaxVerstappenIn2015 - 2018.07.30 at 15h 04m 38s.xml">
-      <configuration name="RestAssuredExercises2Test.checkNumberOfPitstopsForMaxVerstappenIn2015" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RestAssuredExercises3Test_getNinthDriverId - 2018.07.30 at 15h 37m 30s.xml">
-      <configuration name="RestAssuredExercises3Test.getNinthDriverId" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RestAssuredExercises3Test_useResponseSpecification - 2018.07.30 at 20h 28m 19s.xml">
-      <configuration name="RestAssuredExercises3Test.useResponseSpecification" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RestAssuredExercises3Test_useResponseSpecification - 2018.07.30 at 20h 28m 59s.xml">
-      <configuration name="RestAssuredExercises3Test.useResponseSpecification" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="RestAssuredExercises3Test_getNinthDriverId - 2018.07.30 at 20h 29m 11s.xml">
       <configuration name="RestAssuredExercises3Test.getNinthDriverId" configurationId="JUnit" />
     </history-entry>
@@ -403,6 +383,24 @@
     </history-entry>
     <history-entry file="RestAssuredExercises3Test_useResponseSpecification - 2018.07.30 at 20h 31m 34s.xml">
       <configuration name="RestAssuredExercises3Test.useResponseSpecification" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RestAssuredExercises3Test_useExtractedDriverId - 2018.07.30 at 20h 37m 38s.xml">
+      <configuration name="RestAssuredExercises3Test.useExtractedDriverId" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RestAssuredExercises3Test_getNinthDriverId - 2018.07.30 at 20h 38m 05s.xml">
+      <configuration name="RestAssuredExercises3Test.getNinthDriverId" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RestAssuredExercises3Test_useExtractedDriverId - 2018.07.30 at 20h 38m 10s.xml">
+      <configuration name="RestAssuredExercises3Test.useExtractedDriverId" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RestAssuredExercises3Test - 2018.07.30 at 20h 38m 18s.xml">
+      <configuration name="RestAssuredExercises3Test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RestAssuredExercises3Test - 2018.07.30 at 20h 38m 31s.xml">
+      <configuration name="RestAssuredExercises3Test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RestAssuredExercises3Test_useExtractedDriverId - 2018.07.30 at 20h 40m 04s.xml">
+      <configuration name="RestAssuredExercises3Test.useExtractedDriverId" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
@@ -418,8 +416,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="440" y="100" width="1214" height="1020" extended-state="0" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3298611" />
@@ -429,12 +426,12 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32060185" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32060185" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3298611" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.11689815" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3599034" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26555794" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.43345007" />
       <window_info anchor="right" id="Gradle" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -472,7 +469,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/exercises/RestAssuredExercises3Test.java</url>
-          <line>95</line>
+          <line>94</line>
           <properties class="exercises.RestAssuredExercises3Test" method="useResponseSpecification">
             <option name="EMULATED" value="true" />
           </properties>
@@ -642,8 +639,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/exercises/RestAssuredExercises3Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-849">
-          <caret line="69" column="4" selection-start-line="69" selection-start-column="4" selection-end-line="69" selection-end-column="4" />
+        <state relative-caret-position="141">
+          <caret line="88" column="7" lean-forward="true" selection-start-line="88" selection-start-column="7" selection-end-line="88" selection-end-column="87" />
         </state>
       </provider>
     </entry>

@@ -86,24 +86,23 @@ public class RestAssuredExercises3Test {
 
     /*******************************************************
      * Retrieve the circuit data for the first race in 2014
-     * Use the previously created ResponseSpecification to
-     * execute the specified checks
+     * Use the previously created ResponseSpecification to execute the specified checks
      * Use /2014/1/circuits.json
      * Additionally, check that the circuit is located in Melbourne
      ******************************************************/
 
-//    @Test
-//    public void useResponseSpecification() {
-//
-//        given().
-//                spec(requestSpec).
-//                when().
-//                get("/2014/1/circuits.json").
-//                then().
-//                spec(responseSpec).
-//                and().
-//                 body("MRData.CircuitTable.Circuits[0].Location.locality",is("Melbourne"));
-//    }
+    @Test
+    public void useResponseSpecification() {
+
+        given().
+                spec(requestSpec).
+                when().
+                get("/2014/1/circuits.json").
+                then().
+                spec(responseSpec).
+                and().
+                 body("MRData.CircuitTable.Circuits[0].Location.locality",is("Melbourne"));
+    }
 //
 //    /*******************************************************
 //     * Retrieve the driver data for the ninth mentioned driver
