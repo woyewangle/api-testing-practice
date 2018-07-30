@@ -3,10 +3,15 @@ package exercises;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.http.ContentType;
+import io.restassured.path.json.JsonPath;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
+import org.apache.http.HttpStatus;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+
+import java.util.List;
+import java.util.Map;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.core.Is.is;
@@ -63,11 +68,21 @@ public class RestAssuredExercises3Test {
 
     private static String ninthDriverId;
 
-
     static void getNinthDriverId() {
 
-
+        String result = given(requestSpec).get("/2016/drivers.json").body().prettyPrint();
+        ninthDriverId = ((Map) ((List) JsonPath.given(result)
+                .get("MRData.DriverTable.Drivers"))
+                .get(8))
+                .get("driverId")
+                .toString();
+//        ninthDriverId =
+//                given().
+//                        spec(requestSpec).
+//                        when().get("/2016/drivers.json").getBody().jsonPath().getString("MRData.DriverTable.Drivers[8].driverId");
     }
+
+
 
     /*******************************************************
      * Retrieve the circuit data for the first race in 2014
@@ -77,28 +92,35 @@ public class RestAssuredExercises3Test {
      * Additionally, check that the circuit is located in Melbourne
      ******************************************************/
 
-    @Test
-    public void useResponseSpecification() {
-
-        given().
-                spec(requestSpec).
-                when().
-                then();
-    }
-
-    /*******************************************************
-     * Retrieve the driver data for the ninth mentioned driver
-     * Use the previously extracted driverId to do this
-     * Use it as a path parameter to /drivers/<driverId>.json
-     * Check that the driver is German
-     ******************************************************/
-
-    @Test
-    public void useExtractedDriverId() {
-
-        given().
-                spec(requestSpec).
-                when().
-                then();
-    }
+//    @Test
+//    public void useResponseSpecification() {
+//
+//        given().
+//                spec(requestSpec).
+//                when().
+//                get("/2014/1/circuits.json").
+//                then().
+//                spec(responseSpec).
+//                and().
+//                 body("MRData.CircuitTable.Circuits[0].Location.locality",is("Melbourne"));
+//    }
+//
+//    /*******************************************************
+//     * Retrieve the driver data for the ninth mentioned driver
+//     * Use the previously extracted driverId to do this
+//     * Use it as a path parameter to /drivers/<driverId>.json
+//     * Check that the driver is German
+//     ******************************************************/
+//
+//    @Test
+//    public void useExtractedDriverId() {
+//
+//        given().
+//                spec(requestSpec).
+//                pathParams("ninthDriverId",ninthDriverId).
+//                when().
+//                get("/drivers/{ninthDriverId}.json").
+//                then().
+//                body("MRData.DriverTable.Drivers[0].nationality",is("German"));
+//    }
 }
