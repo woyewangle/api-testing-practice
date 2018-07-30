@@ -1,11 +1,13 @@
 package exercises;
 
 import io.restassured.builder.RequestSpecBuilder;
+import io.restassured.path.json.JsonPath;
 import io.restassured.specification.RequestSpecification;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.given;
+import static org.hamcrest.core.Is.is;
 
 public class RestAssuredExercises4Test {
 
@@ -40,7 +42,16 @@ public class RestAssuredExercises4Test {
 
     private static String accessToken;
 
+    @Test
     public static void retrieveOAuthToken() {
+        String responseBody = given().
+                        spec(requestSpec).
+                        auth().
+                        preemptive().
+                        basic("oauth", "gimmeatoken")
+                        .when()
+                        .get("/oauth2/token").asString();
+        accessToken = JsonPath.from(responseBody).get("access_token");
 
     }
 
@@ -55,11 +66,14 @@ public class RestAssuredExercises4Test {
 
     @Test
     public void checkNumberOfPayments() {
-
+        retrieveOAuthToken();
         given().
                 spec(requestSpec).
+                auth().preemptive().oauth2(accessToken).
                 when().
-                then();
+                get("/payments").
+                then().
+                body("paymentsCount",is(4));
     }
 
     /*******************************************************
