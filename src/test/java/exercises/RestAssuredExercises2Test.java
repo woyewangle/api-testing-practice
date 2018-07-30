@@ -2,10 +2,19 @@ package exercises;
 
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.specification.RequestSpecification;
+import org.apache.http.HttpStatus;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.Arguments;
+import org.junit.jupiter.params.provider.MethodSource;
+
+import java.util.stream.Stream;
 
 import static io.restassured.RestAssured.given;
+import static org.hamcrest.CoreMatchers.containsString;
+import static org.hamcrest.CoreMatchers.not;
+import static org.hamcrest.core.Is.is;
 
 
 public class RestAssuredExercises2Test {
@@ -30,6 +39,12 @@ public class RestAssuredExercises2Test {
 	 ******************************************************/
 
 	//todo
+	static Stream<Arguments> countryDataProvider() {
+		return Stream.of(
+				Arguments.of("monza")
+		);
+	}
+
 
 	/*******************************************************
 	 * Use junit-jupiter-params for @ParameterizedTest that specifies for all races
@@ -39,6 +54,14 @@ public class RestAssuredExercises2Test {
 	 ******************************************************/
 
 	//todo
+	static Stream<Arguments> raceDataProvider() {
+		return Stream.of(
+				Arguments.of("1 = 1"),
+				Arguments.of("2 = 3"),
+				Arguments.of("3 = 2"),
+				Arguments.of("4 = 2")
+		);
+	}
 
 	/*******************************************************
 	 * Request data for a specific circuit (for Monza this 
@@ -46,13 +69,18 @@ public class RestAssuredExercises2Test {
 	 * and check the country this circuit can be found in
 	 ******************************************************/
 	
-	@Test
-	public void checkCountryForCircuit() {
-		
+
+	@ParameterizedTest
+	@MethodSource("countryDataProvider")
+	public void checkCountryForCircuit(String country) {
 		given().
-			spec(requestSpec).
-		when().
-		then();
+				spec(requestSpec).
+				pathParams("country",country).
+				when().log().all().
+				get(" /circuits/{country}.json").
+				then().log().all().
+				statusCode(HttpStatus.SC_OK).
+				body(containsString("Italy"));
 	}
 	
 	/*******************************************************

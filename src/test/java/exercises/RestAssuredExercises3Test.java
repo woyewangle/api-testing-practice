@@ -1,12 +1,15 @@
 package exercises;
 
 import io.restassured.builder.RequestSpecBuilder;
+import io.restassured.builder.ResponseSpecBuilder;
+import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.given;
+import static org.hamcrest.core.Is.is;
 
 public class RestAssuredExercises3Test {
 
@@ -42,7 +45,12 @@ public class RestAssuredExercises3Test {
 
 
     static void createResponseSpecification() {
-
+        responseSpec =
+                new ResponseSpecBuilder().
+                        expectStatusCode(200).
+                        expectContentType(ContentType.JSON).
+                        expectBody("MRData.CircuitTable.Circuits.circuitName[0]",is("Albert Park Grand Prix Circuit")).
+                        build();
 
     }
 
