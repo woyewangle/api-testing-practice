@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e96d74ed-42d6-4aed-a49c-ca9795980cdb" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/exercises/RestAssuredExercises4Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/exercises/RestAssuredExercises4Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/exercises/RestAssuredExercises5Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/exercises/RestAssuredExercises5Test.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/classes/" />
@@ -31,12 +31,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RestAssuredExercises4Test.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RestAssuredExercises4Test.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/exercises/RestAssuredExercises4Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="467">
-              <caret line="93" column="33" selection-start-line="93" selection-start-column="33" selection-end-line="93" selection-end-column="33" />
+            <state relative-caret-position="142">
+              <caret line="81" column="83" lean-forward="true" selection-start-line="81" selection-start-column="34" selection-end-line="81" selection-end-column="83" />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RestAssuredExercises5Test.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/exercises/RestAssuredExercises5Test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="56" column="65" selection-start-line="56" selection-start-column="65" selection-end-line="56" selection-end-column="65" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="speedrecords.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/__files/speedrecords.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-66" />
           </provider>
         </entry>
       </file>
@@ -74,6 +90,7 @@
         <option value="$PROJECT_DIR$/src/test/java/exercises/RestAssuredExercises2Test.java" />
         <option value="$PROJECT_DIR$/src/test/java/exercises/RestAssuredExercises3Test.java" />
         <option value="$PROJECT_DIR$/src/test/java/exercises/RestAssuredExercises4Test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/exercises/RestAssuredExercises5Test.java" />
       </list>
     </option>
   </component>
@@ -154,7 +171,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RestAssuredExercises4Test.checkResponseTimeFor2014CircuitList">
+  <component name="RunManager" selected="JUnit.RestAssuredExercises5Test.checkFourthSpeedRecordWasSetbyAnAstonMartin">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HEIGHT" value="0" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
@@ -162,29 +179,6 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
-    <configuration name="RestAssuredExercises3Test.useExtractedDriverId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="api-testing-practice_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="exercises.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="exercises" />
-      <option name="MAIN_CLASS_NAME" value="exercises.RestAssuredExercises3Test" />
-      <option name="METHOD_NAME" value="useExtractedDriverId" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
     </configuration>
     <configuration name="RestAssuredExercises4Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="api-testing-practice_test" />
@@ -255,7 +249,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="RestAssuredExercises4Test.retrieveOAuthToken" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RestAssuredExercises5Test.checkFourthSpeedRecordWasSetbyAnAstonMartin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="api-testing-practice_test" />
       <extension name="coverage">
         <pattern>
@@ -266,8 +260,31 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="exercises" />
-      <option name="MAIN_CLASS_NAME" value="exercises.RestAssuredExercises4Test" />
-      <option name="METHOD_NAME" value="retrieveOAuthToken" />
+      <option name="MAIN_CLASS_NAME" value="exercises.RestAssuredExercises5Test" />
+      <option name="METHOD_NAME" value="checkFourthSpeedRecordWasSetbyAnAstonMartin" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="RestAssuredExercises5Test.checkThirdSpeedRecordWasSetIn1955" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="api-testing-practice_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="exercises.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="exercises" />
+      <option name="MAIN_CLASS_NAME" value="exercises.RestAssuredExercises5Test" />
+      <option name="METHOD_NAME" value="checkThirdSpeedRecordWasSetIn1955" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -317,19 +334,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.RestAssuredExercises3Test.useExtractedDriverId" />
-      <item itemvalue="JUnit.RestAssuredExercises4Test.retrieveOAuthToken" />
       <item itemvalue="JUnit.RestAssuredExercises4Test" />
       <item itemvalue="JUnit.RestAssuredExercises4Test.checkNumberOfPayments" />
       <item itemvalue="JUnit.RestAssuredExercises4Test.checkResponseTimeFor2014CircuitList" />
+      <item itemvalue="JUnit.RestAssuredExercises5Test.checkThirdSpeedRecordWasSetIn1955" />
+      <item itemvalue="JUnit.RestAssuredExercises5Test.checkFourthSpeedRecordWasSetbyAnAstonMartin" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RestAssuredExercises5Test.checkFourthSpeedRecordWasSetbyAnAstonMartin" />
+        <item itemvalue="JUnit.RestAssuredExercises5Test.checkThirdSpeedRecordWasSetIn1955" />
         <item itemvalue="JUnit.RestAssuredExercises4Test.checkResponseTimeFor2014CircuitList" />
         <item itemvalue="JUnit.RestAssuredExercises4Test.checkNumberOfPayments" />
         <item itemvalue="JUnit.RestAssuredExercises4Test" />
-        <item itemvalue="JUnit.RestAssuredExercises4Test.retrieveOAuthToken" />
-        <item itemvalue="JUnit.RestAssuredExercises3Test.useExtractedDriverId" />
       </list>
     </recent_temporary>
   </component>
@@ -348,27 +365,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RestAssuredExercises3Test_useResponseSpecification - 2018.07.30 at 20h 31m 34s.xml">
-      <configuration name="RestAssuredExercises3Test.useResponseSpecification" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RestAssuredExercises3Test_useExtractedDriverId - 2018.07.30 at 20h 37m 38s.xml">
-      <configuration name="RestAssuredExercises3Test.useExtractedDriverId" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RestAssuredExercises3Test_getNinthDriverId - 2018.07.30 at 20h 38m 05s.xml">
-      <configuration name="RestAssuredExercises3Test.getNinthDriverId" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RestAssuredExercises3Test_useExtractedDriverId - 2018.07.30 at 20h 38m 10s.xml">
-      <configuration name="RestAssuredExercises3Test.useExtractedDriverId" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RestAssuredExercises3Test - 2018.07.30 at 20h 38m 18s.xml">
-      <configuration name="RestAssuredExercises3Test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RestAssuredExercises3Test - 2018.07.30 at 20h 38m 31s.xml">
-      <configuration name="RestAssuredExercises3Test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RestAssuredExercises3Test_useExtractedDriverId - 2018.07.30 at 20h 40m 04s.xml">
-      <configuration name="RestAssuredExercises3Test.useExtractedDriverId" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="RestAssuredExercises4Test_retrieveOAuthToken - 2018.07.30 at 21h 06m 13s.xml">
       <configuration name="RestAssuredExercises4Test.retrieveOAuthToken" configurationId="JUnit" />
     </history-entry>
@@ -377,6 +373,27 @@
     </history-entry>
     <history-entry file="RestAssuredExercises4Test_checkNumberOfPayments - 2018.07.30 at 21h 16m 45s.xml">
       <configuration name="RestAssuredExercises4Test.checkNumberOfPayments" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RestAssuredExercises4Test_checkResponseTimeFor2014CircuitList - 2018.07.30 at 21h 43m 00s.xml">
+      <configuration name="RestAssuredExercises4Test.checkResponseTimeFor2014CircuitList" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RestAssuredExercises4Test_checkResponseTimeFor2014CircuitList - 2018.07.30 at 21h 43m 11s.xml">
+      <configuration name="RestAssuredExercises4Test.checkResponseTimeFor2014CircuitList" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RestAssuredExercises4Test_checkResponseTimeFor2014CircuitList - 2018.07.30 at 21h 43m 29s.xml">
+      <configuration name="RestAssuredExercises4Test.checkResponseTimeFor2014CircuitList" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RestAssuredExercises4Test_checkResponseTimeFor2014CircuitList - 2018.07.30 at 21h 43m 44s.xml">
+      <configuration name="RestAssuredExercises4Test.checkResponseTimeFor2014CircuitList" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RestAssuredExercises5Test_checkThirdSpeedRecordWasSetIn1955 - 2018.07.30 at 21h 47m 35s.xml">
+      <configuration name="RestAssuredExercises5Test.checkThirdSpeedRecordWasSetIn1955" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RestAssuredExercises5Test_checkThirdSpeedRecordWasSetIn1955 - 2018.07.30 at 21h 48m 42s.xml">
+      <configuration name="RestAssuredExercises5Test.checkThirdSpeedRecordWasSetIn1955" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RestAssuredExercises5Test_checkFourthSpeedRecordWasSetbyAnAstonMartin - 2018.07.30 at 21h 51m 23s.xml">
+      <configuration name="RestAssuredExercises5Test.checkFourthSpeedRecordWasSetbyAnAstonMartin" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
@@ -403,9 +420,9 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.18981482" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2824074" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3298611" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.2638889" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.2638889" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26555794" />
@@ -604,9 +621,6 @@
     <entry file="file://$PROJECT_DIR$/src/test/resources/mappings/GetOAuth2Token.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/mappings/GetNumberOfPayments.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/exercises/RestAssuredExercises2Test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="683">
@@ -630,9 +644,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/exercises/RestAssuredExercises4Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="93" column="33" selection-start-line="93" selection-start-column="33" selection-end-line="93" selection-end-column="33" />
+        <state relative-caret-position="142">
+          <caret line="81" column="83" lean-forward="true" selection-start-line="81" selection-start-column="34" selection-end-line="81" selection-end-column="83" />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/exercises/RestAssuredExercises5Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="56" column="65" selection-start-line="56" selection-start-column="65" selection-end-line="56" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/mappings/GetNumberOfPayments.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/__files/speedrecords.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-66" />
       </provider>
     </entry>
   </component>

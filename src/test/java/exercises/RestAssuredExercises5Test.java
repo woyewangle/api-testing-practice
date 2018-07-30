@@ -6,6 +6,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.given;
+import static org.hamcrest.core.Is.is;
 
 public class RestAssuredExercises5Test {
 
@@ -32,8 +33,10 @@ public class RestAssuredExercises5Test {
 		
 		given().
 			spec(requestSpec).
-		when().
-		then();
+				when().
+				get("/xml/speedrecords").
+				then().log().all().
+		 		body("speedRecords.car[2].year", is("1955"));
 	}
 	
 	/*******************************************************
@@ -43,14 +46,16 @@ public class RestAssuredExercises5Test {
 	 * by an Aston Martin
 	 ******************************************************/
 	
-	@Test
-	public void checkFourthSpeedRecordWasSetbyAnAstonMartin() {
-		
-		given().
-			spec(requestSpec).
-		when().
-		then();
-	}
+//	@Test
+//	public void checkFourthSpeedRecordWasSetbyAnAstonMartin() {
+//
+//		given().
+//				spec(requestSpec).
+//				when().
+//				get("/xml/speedrecords").
+//				then().log().all().
+//				body("speedRecords.car.collect{it.@make}[3]", is("Aston Martin"));
+//	}
 	
 	/*******************************************************
 	 * Get the list of speed records set by street legal cars

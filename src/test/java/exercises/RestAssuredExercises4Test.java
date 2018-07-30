@@ -79,8 +79,7 @@ public class RestAssuredExercises4Test {
 
     /*******************************************************
      * Request the list of all circuits that hosted a
-     * Formula 1 race in 2014 and check that this request is
-     * answered within 100 ms
+     * Formula 1 race in 2014 and check that this request is answered within 100 ms
      * Use /2014/circuits.json
      ******************************************************/
 
