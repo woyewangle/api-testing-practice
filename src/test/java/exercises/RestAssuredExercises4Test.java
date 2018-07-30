@@ -7,6 +7,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.lessThan;
 import static org.hamcrest.core.Is.is;
 
 public class RestAssuredExercises4Test {
@@ -89,6 +90,7 @@ public class RestAssuredExercises4Test {
         given().
                 spec(requestSpec).
                 when().
-                then();
+                get("/2014/circuits.json").
+                then().time(lessThan(100L));
     }
 }
