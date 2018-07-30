@@ -111,15 +111,15 @@ public class RestAssuredExercises3Test {
 //     * Check that the driver is German
 //     ******************************************************/
 //
-//    @Test
-//    public void useExtractedDriverId() {
-//
-//        given().
-//                spec(requestSpec).
-//                pathParams("ninthDriverId",ninthDriverId).
-//                when().
-//                get("/drivers/{ninthDriverId}.json").
-//                then().
-//                body("MRData.DriverTable.Drivers[0].nationality",is("German"));
-//    }
+    @Test
+    public void useExtractedDriverId() {
+
+        given().
+                spec(requestSpec).
+                pathParams("ninthDriverId",ninthDriverId).
+                when().
+                get("/drivers/{ninthDriverId}.json").
+                then().
+                body("MRData.DriverTable.Drivers[0].nationality",is("German"));
+    }
 }
